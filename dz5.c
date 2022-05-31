@@ -1,3 +1,24 @@
+/*
+ Napisati program koji kreira nekoliko plejlsita u M3U formatu na osnovu jedne plejliste koja je
+zadata u ASX formatu. Program putem komandne linije prihvata ime ulazne ASX datoteke.
+Program zatim učita podatke iz ulazne datoteke i sortira rastuće sve numere prvo po imenu
+izvođača, a zatim po imenu numere. Nakon toga, program za svakog izvođača formira jednu
+datoteku u M3U formatu (dužina svake pesme se postavlja na vrednost 0).
+Program napisati prema sledećim stavkama.
+1) Implementirati funkciju koja čita podatke o jednoj numeri iz ulazne datoteke prema formatu
+koji je zadat u tekstu zadatka i formira strukturu podataka kojom se opisuje jedna numera.
+Ukoliko ne pročita numeru, funkcija treba da vrati vrednost NULL.
+2) Implementirati funkciju koja pozivanjem prethodno realizovane funkcije formira dvostruko
+ulančanu listu numera.
+3) Implementirati funkciju koja sortira dvostrukto ulančanu listu, prema zahtevima zadatka.
+4) Implementirati funkciju koja vrši formiranje izlaznih datoteka na osnovu dvostruko ulančane
+liste. Ime jedne izlazne datoteke se formira dodavanjem ekstenzije .m3u na ime izvođača
+čije pesme se nalaze u toj datoteci.
+5) Implementirati funkciju koja oslobađa svu zauzetu dinamičku memoriju.
+6) Napisati glavni program koji korišćenjem prethodno realizovanih funkcija pročita ulaznu
+datoteku, izvrši zahtevanu obradu, formira izlaznu datoteku, dealocira svu korišćenu
+dinamičku memoriju i zatvori korišćene datoteke.
+*/
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
